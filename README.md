@@ -1,1 +1,1 @@
-# Portfolio_Project
+This repository contains the source code for my personal portfolio website. It features a clean, minimal design and highlights my projects, skills, and background. The site is fully responsive and designed to be fast and easy to navigate.
