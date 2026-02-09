@@ -743,8 +743,8 @@ section {
 }
 
 .contact-info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
     gap: var(--spacing-sm);
 }
 
@@ -876,7 +876,7 @@ section {
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: var(--spacing-sm);
@@ -936,19 +936,24 @@ section {
         padding: var(--spacing-lg) var(--spacing-sm);
     }
 
+    .hero-section {
+        padding-top: 100px;
+    }
+
     .nav-menu {
         position: fixed;
-        top: 70px;
+        top: 60px;
         right: -100%;
         width: 100%;
         max-width: 300px;
-        height: calc(100vh - 70px);
+        height: calc(100vh - 60px);
         background: rgba(10, 10, 10, 0.98);
         flex-direction: column;
         padding: var(--spacing-md);
         gap: var(--spacing-sm);
         transition: var(--transition-normal);
         border-left: 2px solid rgba(168, 85, 247, 0.2);
+        z-index: 999;
     }
 
     .nav-menu.active {
